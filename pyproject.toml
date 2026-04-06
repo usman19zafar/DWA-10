@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dwa10"
+version = "0.1.0"
+description = "Indestructible memory system for any LLM — priority anchors, decay, context packing."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Zulfr", email = "hello@zulfr.com" }]
+keywords = ["claude", "anthropic", "memory", "llm", "ai", "context", "anchors"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "anthropic>=0.40.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+
+[project.urls]
+Homepage = "https://zulfr.com/dwa10"
+Repository = "https://github.com/usman19zafar/dwa10_memory-0.1.0"
+"Bug Tracker" = "https://github.com/usman19zafar/dwa10_memory-0.1.0/issues"
+"Pro Version" = "https://zulfr.com/dwa10-pro"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dwa10"]
