@@ -104,4 +104,5 @@ new_session.load("my_session")      # restores all anchors
 
 ## License
 
-Apache 2.0 © [Zulfr](https://zulfr.com)
+Apache 2.0 © 2026 Usman Zafar Ph.D 
+www.zulfr.com
